@@ -11,7 +11,7 @@ GUILDS = config['GUILDS'].split(",")
 intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
-description = "In the コーナー"
+description = "In the コーナー\nhttps://github.com/h1divp/nakayosh"
 
 bot = commands.Bot(command_prefix=config['PREFIX'], description=description, intents=intents)
 logger = logging.FileHandler(filename=config['LOG_FILENAME'], encoding='utf-8', mode='w')
